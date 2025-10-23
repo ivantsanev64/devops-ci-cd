@@ -51,7 +51,7 @@ jobs:
   build_ver_18:
     runs-on: ubuntu-latest
     name: building ver 18
-    needs: [build]
+    needs: [build_ver_20]
 
 
     steps:
@@ -68,7 +68,7 @@ jobs:
   build_ver_22:
     runs-on: ubuntu-latest
     name: building ver 22
-    needs: [build]
+    needs: [build_ver_18]
 
 
     steps:
